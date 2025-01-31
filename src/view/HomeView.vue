@@ -1,3 +1,8 @@
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+
+</script>
+
 <template>
-  <h1>Hello Deric</h1>
+  <Navbar/>
 </template>
