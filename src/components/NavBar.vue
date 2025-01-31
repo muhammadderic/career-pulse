@@ -23,7 +23,7 @@
           <!-- Navigation -->
           <div class="md:ml-auto">
             <div class="flex space-x-2">
-              <a href="/" class="shadow-lg text-black hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 border hover:border-0 border-black">
+              <a href="/" class="text-black hover:bg-gray-500 hover:text-white rounded-md px-3 py-2 border hover:border-0 border-black">
                 Home
               </a>
             </div>
