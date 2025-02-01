@@ -1,12 +1,15 @@
 <script setup>
 import HeroSection from '@/components/HeroSection.vue';
 import HomeCards from '@/components/HomeCards.vue';
-import Navbar from '@/components/Navbar.vue';
+import JobListings from '@/components/JobListings.vue';
+import NavBar from '@/components/NavBar.vue';
 
 </script>
 
 <template>
-  <Navbar/>
+  <NavBar/>
   <HeroSection/>
   <HomeCards/>
+
+  <JobListings/>
 </template>
