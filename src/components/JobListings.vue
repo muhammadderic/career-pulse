@@ -1,7 +1,19 @@
 <script setup lang="ts">
-import { onMounted, reactive } from 'vue';
+import { computed, onMounted, reactive } from 'vue';
 import JobListing from './JobListing.vue';
 import axios from 'axios';
+
+const props = defineProps({
+  limit: {
+    type: Number,
+  },
+});
+
+const limitedJobs = computed(() => {
+  // If no limit is provided, return all jobs
+  return props.limit ? state.jobs.slice(0, props.limit) : state.jobs;
+});
+
 
 const state = reactive({
   jobs: [],
@@ -29,7 +41,7 @@ onMounted(async () => {
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <JobListing
-          v-for="job in state.jobs"
+          v-for="job in limitedJobs"
           :key="job.id"
           :job="job"
         />
