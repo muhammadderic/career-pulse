@@ -15,7 +15,7 @@ import Card from './HomeCard.vue';
             Unlock your dream career today—explore opportunities tailored just for you and take the first step toward a brighter future!
           </p>
 
-          <a href="/" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
+          <a href="/jobs" class="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700">
             Browse Jobs
           </a>
         </Card>
