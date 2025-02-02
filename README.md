@@ -1,41 +1,73 @@
-# .
+# Career Pulse
 
-This template should help get you started developing with Vue 3 in Vite.
+## Overview
 
-## Recommended IDE Setup
+**Career Pulse** is a job discovery platform where recruiters can upload job information, and job seekers can explore available job opportunities.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
 
-## Customize configuration
+### ✅ Current Features:
+- Browse job listings
+- View job details
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 🚀 Upcoming Features:
+- Recruiters can post jobs
+- Search and filter jobs based on criteria
+- User authentication for recruiters and job seekers
 
-## Project Setup
+## Installation
 
-```sh
-npm install
-```
+To get started with the **Career Pulse Web**, follow these steps:
 
-### Compile and Hot-Reload for Development
+1. **Clone the repository:**
 
-```sh
-npm run dev
-```
+    ```bash
+    git clone https://github.com/muhammadderic/career-pulse.git
+    cd career-pulse
+    ```
 
-### Compile and Minify for Production
+2. **Install dependencies:**
 
-```sh
-npm run build
-```
+    ```bash
+    npm install
+    ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+3. **Run the development server:**
 
-```sh
-npm run test:unit
-```
+    ```bash
+    npm run dev
+    ```
 
-### Lint with [ESLint](https://eslint.org/)
+    Visit [http://localhost:5173](http://localhost:5173) in your browser to see the app in action.
 
-```sh
-npm run lint
-```
+## Screenshots
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="./src/assets/img/career_pulse_app.jpeg" alt="Other Page" width="50%" />
+</div>
+
+*Main App Page (left) and Other Page (right)*
+
+## Technologies Used
+
+- **Vue.js** – Frontend framework for building the UI
+- **JSON Server** – Mock backend API for job data
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push your branch.
+4. Open a pull request to have your changes reviewed.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+If you have any questions or suggestions, feel free to reach out:
+
+- **GitHub**: [muhammadderic](https://github.com/muhammadderic)
