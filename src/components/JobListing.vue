@@ -1,6 +1,24 @@
 <script setup>
-defineProps({
+import { computed, ref } from 'vue';
+
+const props = defineProps({
   job: Object
+})
+
+const showFullDescription = ref(false);
+
+const toggleFullDescription = () => {
+  showFullDescription.value = !showFullDescription.value;
+}
+
+const truncatedDescription = computed(() => {
+  let description = props.job.description;
+
+  if (!showFullDescription.value) {
+    description = description.slice(0, 100) + "...";
+  }
+
+  return description;
 })
 </script>
 
@@ -23,10 +41,11 @@ defineProps({
 
       <div class="mb-5 flex flex-col gap-4">
         <div>
-          {{ job.description }}
+          {{ truncatedDescription }}
         </div>
         
         <button
+          @click="toggleFullDescription"
           class="cursor-pointer px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-normal rounded-lg shadow-md hover:from-green-600 hover:to-green-700 transition duration-300"
         >
           show more
