@@ -29,7 +29,7 @@ import Card from './HomeCard.vue';
             Unlock top talent for your team today—post your job with us and connect with the best candidates in just a few clicks!
           </p>
 
-          <a href="/" class="inline-block bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600">
+          <a href="/jobs/add" class="inline-block bg-green-500 text-white rounded-lg px-4 py-2 hover:bg-green-600">
             Add Job
           </a>
         </Card>
