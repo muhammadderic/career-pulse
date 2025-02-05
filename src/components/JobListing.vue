@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const props = defineProps({
   job: Object
@@ -46,9 +47,11 @@ const truncatedDescription = computed(() => {
         
         <button
           @click="toggleFullDescription"
-          class="cursor-pointer px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-normal rounded-lg shadow-md hover:from-green-600 hover:to-green-700 transition duration-300"
+          class="cursor-pointer px-2 font-normal"
         >
-          show more
+        {{
+          showFullDescription ? "show less" : "read more"
+        }}
         </button>
       </div>
 
@@ -59,7 +62,11 @@ const truncatedDescription = computed(() => {
           <i class="pi pi-map-marker text-teal-700"></i>
           {{ job.location }}
         </div>
+        <RouterLink :to="'/jobs/' + job.id" class="cursor-pointer px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-normal rounded-lg shadow-md hover:from-green-600 hover:to-green-700 transition duration-300">
+          Read More
+        </RouterLink>
       </div>
+
     </div>
   </div>
 </template>
