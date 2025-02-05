@@ -46,7 +46,7 @@ const truncatedDescription = computed(() => {
         
         <button
           @click="toggleFullDescription"
-          class="cursor-pointer px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white font-normal rounded-lg shadow-md hover:from-green-600 hover:to-green-700 transition duration-300"
+          class="cursor-pointer px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-normal rounded-lg shadow-md hover:from-green-600 hover:to-green-700 transition duration-300"
         >
           show more
         </button>
